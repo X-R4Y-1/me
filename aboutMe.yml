@@ -1,6 +1,6 @@
 name: Stefen O'Neill
 studentNumber: z5255382
 officialEmail: z5255382@ad.unsw.edu.au
-contactEmail: oneill.stefen@gmail.com
-firstBit: oneill.stefen
-otherBit: gmail.com
+contactEmail:
+  firstBit: oneill.stefen   
+  otherBit: gmail.com
