@@ -85,11 +85,14 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    star = []
-    for i in range(10):
-        star.append('*')
-	    
-    return star*10
+    list1 = []
+    for a in range (10):
+        star = []
+        for i in range(10):
+            star.append('*')
+        list1.append(star)
+    
+    return list1
 
 def loops_3():
     """Make a rising block of numbers.
