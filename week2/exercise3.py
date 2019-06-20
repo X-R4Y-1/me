@@ -206,7 +206,14 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    listLine = []
+    for a in range (10):
+        count = []
+        for i in range(a+1):
+            count.append(str(i))
+        listLine.append(count)
+    
+    return listLine
 
 
 def loops_7():
@@ -230,7 +237,20 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    listLine = []
+    for a in range (1,6):
+        starPyr = []
+        for i in range(1,10):
+            x = 0
+            y = 5
+            if i > y - a and i < y + a:
+                starPyr.append("*")
+            else:
+                starPyr.append(" ")
+            x = x + 1
+        listLine.append(starPyr)
+    
+    return listLine
 
 
 def lp(some_kind_of_list, exercise_name):
