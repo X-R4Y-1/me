@@ -146,7 +146,7 @@ def loops_4():
     for a in range (10):
         num = []
         for i in range(10):
-            num.append(str(a))
+            num.append(str(i))
         listLine.append(num)
     
     return listLine
