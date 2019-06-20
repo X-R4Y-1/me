@@ -115,7 +115,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    listLine = []
+    for a in range (10):
+        num = []
+        for i in range(10):
+            num.append(str(a))
+        listLine.append(num)
+    
+    return listLine
 
 
 def loops_4():
@@ -135,7 +142,14 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    listLine = []
+    for a in range (10):
+        num = []
+        for i in range(10):
+            num.append(str(a))
+        listLine.append(num)
+    
+    return listLine
 
 
 def loops_5():
