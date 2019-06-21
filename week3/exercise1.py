@@ -76,9 +76,13 @@ def not_number_rejector(message):
     When you do get a number, return it.
     """
     
-    while False:
-        if message.isdigit():
+    while True:
+        try:
+            message.isdigit
             return message
+        except ValueError:
+            return True
+    return message
     
 
 
@@ -91,12 +95,11 @@ def super_asker(low, high):
     amount of code.
     """
     x = 0 
-    if low.isdigit() or high.isdigit():
-        while x < low or x > high:
-            if x < low:
-                x = x + 1
-            elif x > high:
-                x = x - 1
+    while x < low or x > high:
+        if x < low:
+            x = x + 1
+        elif x > high:
+            x = x - 1
 
     return x
 

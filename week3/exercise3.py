@@ -40,7 +40,7 @@ def exampleGuessingGame():
     print("OK then, a lower number is {}".format(lowerBound))
     lowerBound = int(lowerBound)
     upperBound = input("Enter an upper bound: ")
-    print("OK then, a number between x and {} ?".format(upperBound))
+    print("OK then, a number between your chosen lower and {} ?".format(upperBound))
     upperBound = int(upperBound)
 
     actualNumber = random.randint(lowerBound, upperBound)
