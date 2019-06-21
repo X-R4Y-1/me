@@ -95,7 +95,14 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """
-    return None
+    x = 0 
+    while x < low or x > high:
+        if x < low:
+            x = x + 1
+        elif x > high:
+            x = x - 1
+
+    return x
 
 
 if __name__ == "__main__":
