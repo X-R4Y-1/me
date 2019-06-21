@@ -91,7 +91,7 @@ def super_asker(low, high):
     amount of code.
     """
     x = 0 
-    if low.isdigit() or high.isdigit:
+    if low.isdigit() or high.isdigit():
         while x < low or x > high:
             if x < low:
                 x = x + 1
