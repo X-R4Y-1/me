@@ -65,6 +65,12 @@ def loops_1c(number_of_items=5, symbol="#"):
     Hash = ['#', '#', '#', '#', '#']
     len == number_of_items
     
+    ListHash = []
+
+    for i in range(number_of_items):
+        ListHash.append(symbol)
+
+    return ListHash
 
 
 def loops_2():
