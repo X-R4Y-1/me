@@ -48,11 +48,11 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    star = []
-    for i in range(10):
-        star.append('*')
+    ListStar = []
+    for star in range(10):
+        ListStar.append('*')
 	    
-    return star
+    return ListStar
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -186,6 +186,8 @@ def loops_5():
     for a in range (10):
         coor = []
         for i in range(5):
+            # template = '(i{col}, {row})'
+            # value_to_append = template.format(col=column_id, row=row_id)
             coor.append("(" + "i" + str(a) + "," + " " + "j" + str(i) + ")")
         listLine.append(coor)
     
