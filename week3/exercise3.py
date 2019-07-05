@@ -39,9 +39,9 @@ def advancedGuessingGame():
             print("You got it!! It was {}".format(actualNumber))
             guessed = True
         elif guessedNumber < actualNumber:
-            print("Too small, try again :'(")
+            print("Too small ur bad, try again :'(")
         else:
-            print("Too big, try again :'(")
+            print("Nope too big ;) Too big, try again :'(")
     return "You got it!"
 
 if __name__ == "__main__":
