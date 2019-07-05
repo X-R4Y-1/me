@@ -15,7 +15,7 @@ def loop_ranger(start, stop=None, step=1):
     loop = []
     while start < stop:
         loop.append(start)
-        start = start + stop
+        start = start + step
 
     return loop
 
@@ -30,7 +30,7 @@ def lone_ranger(start, stop, step):
     loop = []
     while start < stop:
         loop.append(start)
-        start = start + stop
+        start = start + step
 
     return loop
 
@@ -81,7 +81,7 @@ def not_number_rejector(message):
             message.isdigit
             return message
         except ValueError:
-            return True
+            return True    
     return message
     
 
