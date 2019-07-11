@@ -15,10 +15,7 @@ def get_number(message):
             pass
 
 def advancedGuessingGame():
-    """Play a game with the user.
-
-    This is an example guessing game. It'll test as an example too.
-    """
+    
     print("\nWelcome to the guessing game!")
     print("A number between _ and _ ?")
     lowerBound = input("Enter an lower bound: ")
