@@ -34,9 +34,20 @@ def get_some_details():
          dictionaries.
     """
     json_data = open(LOCAL + "/lazyduck.json").read()
-
+    
     data = json.loads(json_data)
-    return {"lastName": None, "password": None, "postcodePlusID": None}
+
+    lastN = (data["results"][0]["name"]["last"])
+
+    PWord = (data["results"][0]["login"]["password"])
+
+    PostCode = (data["results"][0]["location"]["postcode"])
+
+    Id = (data["results"][0]["id"]["value"])
+
+    PostPlusId = PostCode + int(Id)
+
+    return {"lastName": lastN, "password": PWord, "postcodePlusID": PostPlusId}
 
 
 def wordy_pyramid():
@@ -74,6 +85,10 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
+    key = "ti9ewkvikmz14mod39pmpdsmpuijxr0nw9qjah8kei8slpnc8"
+    template = "http://api.wordnik.com/v4/words.json/randomWords?api_key={key}&minLength={minLength}&maxLength={maxLength}&limit={limit}"
+    url = template.format(base=template, minLength=length, maxLength=length, limit=limit, key=key)
+
     pass
 
 
