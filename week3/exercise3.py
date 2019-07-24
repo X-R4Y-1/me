@@ -11,8 +11,9 @@ def get_number(message):
             answer = input(message)
             answer = int(answer)
             return answer
-        except Exception:
+        except ValueError:
             pass
+
 
 def advancedGuessingGame():
     

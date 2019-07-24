@@ -85,9 +85,27 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
+
     key = "ti9ewkvikmz14mod39pmpdsmpuijxr0nw9qjah8kei8slpnc8"
     template = "http://api.wordnik.com/v4/words.json/randomWords?api_key={key}&minLength={minLength}&maxLength={maxLength}&limit={limit}"
     url = template.format(base=template, minLength=length, maxLength=length, limit=limit, key=key)
+    r = requests.get(url)
+    response_json = json.loads(r.text)
+
+    rows = input(18)
+    rows = int (rows)
+    for i in range (3, rows):
+        for j in range(3, i + 2):
+            j = length
+            print(response_json[0]['word'])
+        print("\r")
+
+    for i in range (rows, 0, -2):
+        for j in range(0, i -2):
+            j = length
+            print(response_json[0]['word'])
+        print("\r")
+    
 
     pass
 
