@@ -21,16 +21,17 @@ you'll need to figure out for yourself what to do.
 # move on, and eventually delete this function. (And this comment!)
 def do_bunch_of_bad_things():
 
+    r2r = "Getting ready to start in"
 
-    print("Getting ready to start in 9")
-    print("Getting ready to start in 8")
-    print("Getting ready to start in 7")
-    print("Getting ready to start in 6")
-    print("Getting ready to start in 5")
-    print("Getting ready to start in 4")
-    print("Getting ready to start in 3")
-    print("Getting ready to start in 2")
-    print("Getting ready to start in 1")
+    print(r2r, " 9")
+    print(r2r " 8")
+    print(r2r " 7")
+    print(r2r " 6")
+    print(r2r " 5")
+    print(r2r " 4")
+    print(r2r " 3")
+    print(r2r " 2")
+    print(r2r " 1")
     print("Let's go!")
 
     triangle = {"base": 3, "height": 4}
@@ -53,8 +54,7 @@ def do_bunch_of_bad_things():
 def countdown(message, start, stop, completion_message):
     for z in range(stop):
         if z == stop:
-
-    pass
+            return completion_message
 
 
 # TRIANGLES
