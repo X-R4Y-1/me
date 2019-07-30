@@ -24,14 +24,14 @@ def do_bunch_of_bad_things():
     r2r = "Getting ready to start in"
 
     print(r2r, " 9")
-    print(r2r " 8")
-    print(r2r " 7")
-    print(r2r " 6")
-    print(r2r " 5")
-    print(r2r " 4")
-    print(r2r " 3")
-    print(r2r " 2")
-    print(r2r " 1")
+    print(r2r, " 8")
+    print(r2r, " 7")
+    print(r2r, " 6")
+    print(r2r, " 5")
+    print(r2r, " 4")
+    print(r2r, " 3")
+    print(r2r, " 2")
+    print(r2r, " 1")
     print("Let's go!")
 
     triangle = {"base": 3, "height": 4}
