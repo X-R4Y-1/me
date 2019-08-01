@@ -53,7 +53,7 @@ def do_bunch_of_bad_things():
 # It should say something different in the last message.
 def countdown(message, start, stop, completion_message):
     for z in range(start, stop-1, -1):
-        print(message,str(i))
+        print(message,str(z))
     print(completion_message)
     
     return None
