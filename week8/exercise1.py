@@ -132,11 +132,12 @@ def make_filler_text_dictionary():
     TIP: you'll need the requests library
     """
 
+    '''
     import requests
     template = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={Length}"
     url = template.format(length = 3)
     r = requests.get(url)
-    
+    '''
     
     '''
     list1 = []
@@ -146,9 +147,10 @@ def make_filler_text_dictionary():
             num.append(str(a))
         listLine.append(num)
     '''
+    '''
     print (r)
     return r
-
+    '''
 
 def random_filler_text(number_of_words=200):
     """Make a paragraph of random filler text.
@@ -160,13 +162,14 @@ def random_filler_text(number_of_words=200):
     TIP: you'll need the random library, 
         see line 77 of week4/hangman_leadboard.py for an example.
     """
+    '''
     import random
 
     wordIndex = random.randint(0, len(wordList) - 1)
     return wordList[wordIndex]
 
     return wordIndex
-
+    '''
 
 def fast_filler(number_of_words=200):
     """Reimplement random_filler_text.
