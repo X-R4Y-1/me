@@ -102,7 +102,7 @@ def best_letter_for_pets():
     """
     import string
 
-    the_alphabet = string.ascii_lowercase
+    
 
     return "e"
 
@@ -133,13 +133,21 @@ def make_filler_text_dictionary():
     """
 
     import requests
-
-    #url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=3"
-    #r = requests.get(url)
-    #r.text # will get you a string, something like this:
-    #response_json = json.loads(r.text)
-
-    return "nope"
+    template = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={Length}"
+    url = template.format(length = 3)
+    r = requests.get(url)
+    
+    
+    '''
+    list1 = []
+    for a in range (5):
+        list2 = []
+        for i in range(3):
+            num.append(str(a))
+        listLine.append(num)
+    '''
+    print (r)
+    return r
 
 
 def random_filler_text(number_of_words=200):
@@ -154,7 +162,8 @@ def random_filler_text(number_of_words=200):
     """
     import random
 
-    wordIndex = random.number_of_words
+    wordIndex = random.randint(0, len(wordList) - 1)
+    return wordList[wordIndex]
 
     return wordIndex
 
@@ -174,7 +183,7 @@ def fast_filler(number_of_words=200):
     If you get this one to work, you are a Very Good Programmer™!
     """
 
-    return paragraph
+    pass
 
 
 if __name__ == "__main__":
