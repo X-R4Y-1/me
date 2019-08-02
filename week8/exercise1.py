@@ -134,11 +134,12 @@ def make_filler_text_dictionary():
 
     import requests
 
-    url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=18"
-    r = requests.get(url)
-    r.text # will get you a string, something like this:
+    #url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=3"
+    #r = requests.get(url)
+    #r.text # will get you a string, something like this:
+    #response_json = json.loads(r.text)
 
-    return 
+    return "nope"
 
 
 def random_filler_text(number_of_words=200):
@@ -153,7 +154,9 @@ def random_filler_text(number_of_words=200):
     """
     import random
 
-    return ""
+    wordIndex = random.number_of_words
+
+    return wordIndex
 
 
 def fast_filler(number_of_words=200):
