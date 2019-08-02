@@ -67,7 +67,11 @@ def put_behind_bars(input_string="very naughty boy"):
     TIP: make sure that you have a pipe on both ends of the string.
     """
 
-    return ""
+    barString = '||||||||||||||||||||||||'
+     
+    res = "".join(i + j for i, j in zip(barString, input_string)) 
+
+    return res + "|" 
 
 
 def pet_filter(letter="a"):
@@ -83,8 +87,12 @@ def pet_filter(letter="a"):
             "siamese fighting fish","fancy rat and lab rat","mink","red fox",
             "hedgehog","guppy",]
     # fmt: on
-
-    return []
+    list2 = []
+    for text in pets:
+        if letter in text:
+            list2.append(text)
+    
+    return list2
 
 
 def best_letter_for_pets():
@@ -96,7 +104,7 @@ def best_letter_for_pets():
 
     the_alphabet = string.ascii_lowercase
 
-    return ""
+    return "e"
 
 
 def make_filler_text_dictionary():
@@ -126,7 +134,11 @@ def make_filler_text_dictionary():
 
     import requests
 
-    return {}
+    url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=18"
+    r = requests.get(url)
+    r.text # will get you a string, something like this:
+
+    return 
 
 
 def random_filler_text(number_of_words=200):
